@@ -56,6 +56,7 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
     if (gDrawingSurface.Memory == NULL)
     {
         MessageBoxA(NULL, "Failed to Allocate memory for drawing surface", "Error!", MB_ICONEXCLAMATION | MB_OK);
+        gGameRunning = FALSE;
     }
 
    // HACCEL hAccelTable = LoadAccelerators(hInstance, MAKEINTRESOURCE(IDC_SNAKEGAMEN2));
